@@ -50,7 +50,7 @@ class HrEmployee(models.Model):
     passport_attachment_ids = fields.Many2many(
         'ir.attachment',
         'passport_attachment_rel',
-        'passport_ref', 'attach_ref1', string="Attachment",
+        'passport_ref', 'attach_ref1', string="Passport Attachment",
         help='Attach the copy of Passport')
     family_info_ids = fields.One2many('hr.employee.family', 'employee_id',
                                       string='Family',
